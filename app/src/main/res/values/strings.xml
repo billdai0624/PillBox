@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Pillbox</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="drawable_open">Open</string>
+    <string name="drawable_close">Close</string>
+
+    <string-array name="function_list">
+        <item>Home</item>
+        <item>Medicine check</item>
+        <item>Alarm</item>
+        <item>Bluetooth Connection</item>
+        <item>Relation Setting</item>
+    </string-array>
+
+    <string-array name="Days_list">
+        <item>1 day</item>
+        <item>2 days</item>
+        <item>3 days</item>
+        <item>5 days</item>
+        <item>10 days</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+
+    <SurfaceView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/videoRecordSurface" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00 : 00"
+        android:id="@+id/recordTime"
+        android:textSize="24sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#aaaaaa"
+        android:textColor="#ffffff"
+        android:padding="2dp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="On rec"
+        android:id="@+id/onRecText"
+        android:textSize="24sp"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/recordTime"
+        android:layout_toStartOf="@+id/recordTime"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#aaaaaa"
+        android:textColor="#ffffff"
+        android:padding="2dp"
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/redPoint"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/red_point"
+        android:layout_toLeftOf="@+id/onRecText"
+        android:layout_toStartOf="@+id/onRecText"
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/recordVideoStart"
+        android:src="@drawable/icon_before_record"
+        android:padding="2dp"
+        android:clickable="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="?android:attr/selectableItemBackground"/>
+
+</RelativeLayout>

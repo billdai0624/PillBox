@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4FFC6"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/relationUserImg"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:padding="5dp"
+        android:src="@drawable/icon_person" />
+
+    <TextView
+        android:id="@+id/relationUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/relationUserImg"
+        android:layout_gravity="center"
+        android:layout_marginLeft="6dp"
+        android:layout_marginStart="6dp"
+        android:layout_toEndOf="@id/relationUserImg"
+        android:layout_toRightOf="@id/relationUserImg"
+        android:text="王小明"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/relationUserPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/relationUserName"
+        android:layout_alignStart="@+id/relationUserName"
+        android:layout_below="@+id/relationUserName"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/relationUserImg"
+        android:layout_toRightOf="@+id/relationUserImg"
+        android:text="Phone number : "
+        android:textSize="14sp" />
+
+    <Switch
+        android:id="@+id/noticeOpenSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/relationUserImg"
+        android:layout_alignLeft="@+id/relationUserPhone"
+        android:layout_alignStart="@+id/relationUserPhone"
+        android:checked="true"
+        android:text="Auto-Notice" />
+
+    <CheckBox
+        android:id="@+id/userChooseCheckbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView9"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/relationUserPhone"
+        android:layout_toEndOf="@+id/relationUserPhone"
+        android:text="0911222456"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+</RelativeLayout>
