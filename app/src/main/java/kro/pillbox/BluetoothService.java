@@ -21,9 +21,9 @@ import java.io.InputStream;
 import java.util.UUID;
 
 public class BluetoothService extends Service {
-    private static final UUID MY_UUID = UUID.fromString("00001101-0000-1000-8000-00805F9B34FB"); // 一定要是這組
-    public static BluetoothAdapter mBluetoothAdapter = null; // 用來搜尋、管理藍芽裝置
-    public static BluetoothSocket mBluetoothSocket = null; // 用來連結藍芽裝置、以及傳送指令
+    private static final UUID MY_UUID = UUID.fromString("00001101-0000-1000-8000-00805F9B34FB");
+    public static BluetoothAdapter mBluetoothAdapter = null;
+    public static BluetoothSocket mBluetoothSocket = null;
     public static InputStream mInputStream = null;
     public updateUIListener updateUIListener;
     public Thread searchBT;

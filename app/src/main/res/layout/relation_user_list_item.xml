@@ -24,7 +24,7 @@
         android:layout_marginStart="6dp"
         android:layout_toEndOf="@id/relationUserImg"
         android:layout_toRightOf="@id/relationUserImg"
-        android:text="王小明"
+        android:text="戴君維"
         android:textSize="20sp" />
 
     <TextView
@@ -48,7 +48,7 @@
         android:layout_alignBottom="@+id/relationUserImg"
         android:layout_alignLeft="@+id/relationUserPhone"
         android:layout_alignStart="@+id/relationUserPhone"
-        android:checked="true"
+        android:checked="false"
         android:text="Auto-Notice" />
 
     <CheckBox
@@ -66,6 +66,70 @@
         android:layout_toEndOf="@+id/relationUserPhone"
         android:text="0911222456"
         android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:padding="5dp"
+        android:src="@drawable/icon_person"
+        android:layout_below="@+id/relationUserImg"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="發送"
+        android:id="@+id/button"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="6dp"
+        android:text="爺爺"
+        android:textSize="20sp"
+        android:layout_alignTop="@+id/imageView6"
+        android:layout_toEndOf="@+id/imageView6" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Phone number : "
+        android:textSize="14sp"
+        android:layout_below="@+id/textView10"
+        android:layout_toEndOf="@+id/imageView6" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="Auto-Notice"
+        android:layout_below="@+id/textView11"
+        android:layout_alignStart="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0911222789"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_below="@+id/textView10"
+        android:layout_alignEnd="@+id/textView9" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView12"
+        android:layout_alignParentEnd="true" />
 
 
 </RelativeLayout>

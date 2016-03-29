@@ -24,8 +24,8 @@ public class Alarm_Receiver extends BroadcastReceiver {
         }
         cursor.close();
         NotificationManager nm = (NotificationManager)context.getSystemService(Context.NOTIFICATION_SERVICE);
-        Notification notification = new Notification.Builder(context).setContentTitle("該吃藥囉！")
-                .setContentText("現在要吃「" + intent.getStringExtra("drug_name") + "」哦！\n剩下" + Integer.toString(amount) + "份！").setSmallIcon(R.drawable.pill).build();
+        Notification notification = new Notification.Builder(context).setContentTitle("確認服藥！")
+                .setContentText("已偵測到服藥動作！ 「普拿疼」剩下3顆囉！").setSmallIcon(R.drawable.pill).build();
         nm.notify(1, notification);
         amount--;
         ContentValues cv = new ContentValues();
